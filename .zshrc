@@ -18,28 +18,28 @@ alias editnvim="nvim ~/.config/nvim/init.vim"
 
 
 #backup
-alias backupconfig="source ~/.config/backup_config/backup_config.sh"
-alias restoreconfig="source ~/.config/backup_config/restore_config.sh"
-alias backupalias="source ~/.config/backup_config/backup_zsh/backup_zsh.sh"
-alias restorealias="source ~/.config/backup_config/backup_zsh/restore_zsh.sh"
-alias runfresh="source ~/.config/run_fresh_install.sh"
+alias backupconfig=". ~/.config/backup_config/backup_config.sh"
+alias restoreconfig=". ~/.config/backup_config/restore_config.sh"
+alias backupalias=". ~/.config/backup_config/backup_zsh/backup_zsh.sh"
+alias restorealias=". ~/.config/backup_config/backup_zsh/restore_zsh.sh"
+alias runfresh=". ~/.config/run_fresh_install.sh"
 
 
 #misc
-alias bld='source ./build.sh'
+alias bld='. ./build.sh'
 alias brewfresh="brew update && brew upgrade && brew cleanup"
-alias cda="source ~/.config/scripts/cdla.sh"
-alias cdl="source ~/.config/scripts/cdll.sh"
+alias cda=". ~/.config/scripts/cdla.sh"
+alias cdl=". ~/.config/scripts/cdll.sh"
 alias la="ls -lAFhG"
 alias ll="ls -lFhG"
 alias zz="z -c"
-alias mkcd="source ~/.config/scripts/mkcd.sh"
+alias mkcd=". ~/.config/scripts/mkcd.sh"
 alias vif='vi $(fzf --preview="cat {}")'
 
 
 #reference
-alias cheat="source ~/.config/scripts/cheatsh.sh"
-alias cht="source ~/.config/scripts/chtsh.sh"
+alias cheat=". ~/.config/scripts/cheatsh.sh"
+alias cht=". ~/.config/scripts/chtsh.sh"
 alias manall="compgen -c | fzf | xargs man"
 alias tldrall="compgen -c | fzf | xargs tldr"
 
