@@ -46,13 +46,22 @@ alias tldrall="compgen -c | fzf | xargs tldr"
 
 #stats
 alias getbatlife="pmset -g batt"
-alias getcputemp="sudo powermetrics --samplers smc | grep -i 'CPU die temperature'"
-alias getgputemp="sudo powermetrics --samplers smc | grep -i 'GPU die temperature'"
-alias getsysfan="sudo powermetrics --samplers smc | grep -i 'Fan'"
+# smc: intel only
+# alias getcputemp="sudo powermetrics --samplers smc | grep -i 'CPU die temperature'"
+# alias getgputemp="sudo powermetrics --samplers smc | grep -i 'GPU die temperature'"
+# alias getsysfan="sudo powermetrics --samplers smc | grep -i 'Fan'"
 alias whowokemeup="log show --style syslog | fgrep 'Wake reason'"
+# Ventura
+# alias setgfxstatson="/bin/launchctl setenv MTL_HUD_ENABLED 1"
+# alias setgfxstatsoff="/bin/launchctl setenv MTL_HUD_ENABLED 0"
+# open mygame.app --env MTL_HUD_ENABLED=1
+# shift+Fn+F9 to toggle the HUD 
+alias setgfxstatson="defaults write -g MetalForceHudEnabled -bool YES"
+alias setgfxstatsoff="defaults write -g MetalForceHudEnabled -bool NO"
 
 
 #zsh settings
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
