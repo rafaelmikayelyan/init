@@ -1,6 +1,6 @@
 #apps
 alias air="~/go/bin/air"
-alias git="/usr/local/bin/git"
+# alias git="/usr/local/bin/git"
 alias love="/Applications/love.app/Contents/MacOS/love"
 alias py="python3"
 alias vi="nvim"
@@ -50,7 +50,7 @@ alias getbatlife="pmset -g batt"
 # alias getcputemp="sudo powermetrics --samplers smc | grep -i 'CPU die temperature'"
 # alias getgputemp="sudo powermetrics --samplers smc | grep -i 'GPU die temperature'"
 # alias getsysfan="sudo powermetrics --samplers smc | grep -i 'Fan'"
-alias whowokemeup="log show --style syslog | fgrep 'Wake reason'"
+alias listlocalhosts="lsof -i @localhost"
 # Ventura
 # alias setgfxstatson="/bin/launchctl setenv MTL_HUD_ENABLED 1"
 # alias setgfxstatsoff="/bin/launchctl setenv MTL_HUD_ENABLED 0"
@@ -58,6 +58,7 @@ alias whowokemeup="log show --style syslog | fgrep 'Wake reason'"
 # shift+Fn+F9 to toggle the HUD 
 alias setgfxstatson="defaults write -g MetalForceHudEnabled -bool YES"
 alias setgfxstatsoff="defaults write -g MetalForceHudEnabled -bool NO"
+alias whowokemeup="log show --style syslog | fgrep 'Wake reason'"
 
 
 #zsh settings
