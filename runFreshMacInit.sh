@@ -28,4 +28,7 @@ killall Finder
 
 cd
 mkdir Developer
+cp "$(dirname $(realpath $0))/.zshrc" ~/
+cp -R "$(dirname $(realpath $0))/.config" ~/
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
