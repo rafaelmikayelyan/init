@@ -4,7 +4,7 @@ defaults write com.apple.finder "ShowRemovableMediaOnDesktop" -boolean true
 # defaults write com.apple.finder "ShowMountedServerOnDesktop" -boolean true
 defaults write com.apple.finder "ShowMountedServersOnDesktop" -boolean true
 defaults write com.apple.finder "NewWindowTarget" -string PfHm
-defaults write com.apple.finder "NewWindowTargetPath" -string "file:///Users/rafaelmikayelyan/"
+defaults write com.apple.finder "NewWindowTargetPath" -string "file:///Users/$(whoami)/"
 defaults write com.apple.finder "FXEnableExtensionChangeWarning" -bool "false"
 defaults write com.apple.finder "FXDefaultSearchScope" -string PfHm
 defaults write com.apple.finder "_FXSortFoldersFirst" -boolean true
