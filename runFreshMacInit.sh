@@ -1,6 +1,7 @@
 defaults write com.apple.finder "ShowExternalHardDrivesOnDesktop" -boolean true
 defaults write com.apple.finder "ShowRemovableMediaOnDesktop" -boolean true
-defaults write com.apple.finder "ShowMountedServerOnDesktop" -boolean true
+# deprecated?
+# defaults write com.apple.finder "ShowMountedServerOnDesktop" -boolean true
 defaults write com.apple.finder "ShowMountedServersOnDesktop" -boolean true
 defaults write com.apple.finder "NewWindowTarget" -string PfHm
 defaults write com.apple.finder "NewWindowTargetPath" -string "file:///Users/rafaelmikayelyan/"
@@ -27,5 +28,4 @@ killall Finder
 
 cd
 mkdir Developer
-git clone https://github.com/rafaelmikayelyan/init && ./init/runShellInit.sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
