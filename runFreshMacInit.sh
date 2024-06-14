@@ -26,8 +26,8 @@ defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerVertSwipeGe
 defaults write com.apple.AppleMultitouchTrackpad "Clicking" -bool "true"
 killall Finder
 
-cd
-mkdir Developer
+mkdir ~/Developer
+
 cp "$(dirname $(realpath $0))/.zshrc" ~/
 cp -R "$(dirname $(realpath $0))/.config" ~/
 
