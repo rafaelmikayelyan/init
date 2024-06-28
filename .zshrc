@@ -35,6 +35,7 @@ alias ll="ls -lFhG"
 alias zz="z -c"
 alias mkcd=". ~/.config/scripts/mkcd.sh"
 alias vif='vi $(fzf --preview="cat {}")'
+alias resetdock="defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock"
 
 
 #reference
