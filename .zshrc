@@ -30,12 +30,14 @@ alias bld='. ./build.sh'
 alias brewfresh="brew update && brew upgrade && brew cleanup"
 alias cda=". ~/.config/scripts/cdla.sh"
 alias cdl=". ~/.config/scripts/cdll.sh"
+alias fzb='fzf --preview="bat --color=always {}"'
 alias la="ls -lAFhG"
 alias ll="ls -lFhG"
 alias zz="z -c"
 alias mkcd=". ~/.config/scripts/mkcd.sh"
-alias vif='vi $(fzf --preview="cat {}")'
 alias resetdock="defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock"
+alias vif='vi $(fzf --preview="cat {}")'
+alias vib='vi $(fzf --preview="bat --color=always {}")'
 
 
 #reference
@@ -62,8 +64,9 @@ alias setgfxstatsoff="defaults write -g MetalForceHudEnabled -bool NO"
 alias whowokemeup="log show --style syslog | fgrep 'Wake reason'"
 
 
-#zsh settings
+#shell
 
+source <(fzf --zsh)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
