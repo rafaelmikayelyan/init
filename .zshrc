@@ -1,6 +1,5 @@
 #apps
 alias air="~/go/bin/air"
-# alias git="/usr/local/bin/git"
 alias love="/Applications/love.app/Contents/MacOS/love"
 alias py="python3"
 alias vi="nvim"
@@ -8,13 +7,12 @@ alias z=". /usr/local/etc/profile.d/z.sh"
 
 
 #directories
-alias cdgit="cd ~/Developer/git/"
-alias cddev="cd ~/Developer/"
+alias cdg="cd ~/Developer/git/ && ls -lFhG"
 alias cdd="cd ~/Developer/ && ls -lFhG"
 
 
 #update config
-alias editalias="nvim ~/.zshrc"
+alias editzshrc="nvim ~/.zshrc"
 alias editnvim="nvim ~/.config/nvim/init.lua"
 
 
@@ -38,7 +36,7 @@ alias mkcd=". ~/.config/scripts/mkcd.sh"
 alias vif='vi $(fzf --preview="cat {}")'
 alias vib='vi $(fzf --preview="bat --color=always {}")'
 alias fzb='fzf --preview="bat --color=always {}"'
-
+alias ytdl=". ~/.config/scripts/ytdl.sh"
 
 
 #reference
@@ -74,3 +72,5 @@ source <(fzf --zsh)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=$PATH:$HOME/go/bin
