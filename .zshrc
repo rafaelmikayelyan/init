@@ -9,6 +9,8 @@ alias z=". /usr/local/etc/profile.d/z.sh"
 #directories
 alias cdg="cd ~/Developer/git/ && ls -lFhG"
 alias cdd="cd ~/Developer/ && ls -lFhG"
+alias cddl="cd ~/Downloads/ && ls -lFhG"
+alias cddt="cd ~/Desktop/ && ls -lFhG"
 
 
 #update config
