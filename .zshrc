@@ -43,6 +43,8 @@ alias vib='vi $(fzf --preview="bat --color=always {}")'
 alias fzb='fzf --preview="bat --color=always {}"'
 alias ytdl=". ~/.config/scripts/ytdl.sh"
 alias servehtml="python3 -m http.server 8888"
+alias lp1="sudo pmset -b lowpowermode 1"
+alias lp0="sudo pmset -b lowpowermode 0"
 
 
 #reference
